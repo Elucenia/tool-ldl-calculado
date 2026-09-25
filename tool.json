@@ -1,0 +1,148 @@
+{
+  "tool": {
+    "id": "ldl-calculado",
+    "title": "LDL-colesterol calculado",
+    "short": "Friedewald, Sampson (NIH) e não-HDL",
+    "spec": [
+      "cardiologia",
+      "endocrinologia-e-metabologia",
+      "medicina-laboratorial"
+    ],
+    "desc": "Calcule o LDL-colesterol pelas fórmulas de Friedewald e de Sampson (NIH 2020) e o colesterol não-HDL, com alerta para triglicerídeos altos.",
+    "lead": "Calcula o LDL-c pelas fórmulas de Friedewald e de Sampson (NIH) e o colesterol não-HDL a partir do perfil lipídico.",
+    "fields": [
+      [
+        "ct",
+        "Colesterol total",
+        "num",
+        {
+          "min": 50,
+          "max": 800,
+          "unit": "mg/dL",
+          "ph": "200"
+        }
+      ],
+      [
+        "hdl",
+        "HDL-colesterol",
+        "num",
+        {
+          "min": 5,
+          "max": 200,
+          "unit": "mg/dL",
+          "ph": "50"
+        }
+      ],
+      [
+        "tg",
+        "Triglicerídeos",
+        "num",
+        {
+          "min": 10,
+          "max": 3000,
+          "unit": "mg/dL",
+          "ph": "150"
+        }
+      ]
+    ],
+    "formula": "<ul><li><strong>Não-HDL-c</strong> = CT − HDL</li><li><strong>Friedewald:</strong> LDL = CT − HDL − TG ÷ 5 (válida com TG &lt; 400 mg/dL)</li><li><strong>Sampson (NIH 2020):</strong> LDL = CT/0,948 − HDL/0,971 − (TG/8,56 + TG × não-HDL/2140 − TG²/16100) − 9,44 (válida até TG 800 mg/dL)</li></ul>",
+    "tips": [
+      "Com TG entre 150 e 400 mg/dL e LDL baixo (&lt; 70 mg/dL), Friedewald subestima o LDL: prefira Sampson, Martin-Hopkins ou a dosagem direta.",
+      "Com TG &gt; 400 mg/dL, Friedewald não deve ser usada; acima de 800 mg/dL, peça LDL direto.",
+      "O não-HDL-c reúne todas as partículas aterogênicas e é meta secundária (30 mg/dL acima da meta de LDL), útil sobretudo com TG altos e em diabéticos.",
+      "Colesterol total e HDL podem ser dosados sem jejum; se TG sem jejum &gt; 440 mg/dL, repita em jejum."
+    ],
+    "sources": [
+      [
+        "Friedewald WT, Levy RI, Fredrickson DS. Estimation of the concentration of low-density lipoprotein cholesterol in plasma, without use of the preparative ultracentrifuge. Clin Chem, 1972.",
+        "https://doi.org/10.1093/clinchem/18.6.499"
+      ],
+      [
+        "Sampson M et al. A new equation for calculation of low-density lipoprotein cholesterol in patients with normolipidemia and/or hypertriglyceridemia. JAMA Cardiol, 2020.",
+        "https://doi.org/10.1001/jamacardio.2020.0013"
+      ],
+      [
+        "Faludi AA et al. Atualização da Diretriz Brasileira de Dislipidemias e Prevenção da Aterosclerose – 2017. Arq Bras Cardiol.",
+        "https://doi.org/10.5935/abc.20170121"
+      ]
+    ],
+    "cases": [
+      [
+        "CT 200, HDL 50, TG 150: Friedewald 120 · Sampson ≈ 123 · não-HDL 150",
+        {
+          "ct": 200,
+          "hdl": 50,
+          "tg": 150
+        },
+        {
+          "raw": {
+            "friedewald": 120,
+            "sampson": 123.4,
+            "nonhdl": 150
+          },
+          "tol": 0.3
+        }
+      ],
+      [
+        "CT 250, HDL 40, TG 450: Friedewald não se aplica (TG ≥ 400)",
+        {
+          "ct": 250,
+          "hdl": 40,
+          "tg": 450
+        },
+        {
+          "raw": {
+            "nonhdl": 210
+          }
+        }
+      ]
+    ],
+    "batch": "cardiologia",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "cardiotoracica",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/cardiologia.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 2,
+      "passed": 2,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 1,
+      "passed": 1,
+      "cases": [
+        {
+          "label": "Não-HDL e Friedewald com unidades mg/dL",
+          "input": {
+            "ct": 240,
+            "hdl": 60,
+            "tg": 100
+          },
+          "expected": {
+            "nonhdl": 180,
+            "friedewald": 160
+          },
+          "status": "passed",
+          "failures": []
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/cardiologia.php",
+    "sha256": "ed536451dd02922a7f840f2c9ce575be004cddb227f60426b7a52cf1b0e94ec0",
+    "bytes": 61303
+  },
+  "clinicalValidation": "not-performed"
+}

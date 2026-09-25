@@ -1,0 +1,43 @@
+[
+  {
+    "label": "CT 200, HDL 50, TG 150: Friedewald 120 · Sampson ≈ 123 · não-HDL 150",
+    "input": {
+      "ct": 200,
+      "hdl": 50,
+      "tg": 150
+    },
+    "expected": {
+      "raw": {
+        "friedewald": 120,
+        "sampson": 123.4,
+        "nonhdl": 150
+      },
+      "tol": 0.3
+    },
+    "originalInput": {
+      "ct": 200,
+      "hdl": 50,
+      "tg": 150
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "CT 250, HDL 40, TG 450: Friedewald não se aplica (TG ≥ 400)",
+    "input": {
+      "ct": 250,
+      "hdl": 40,
+      "tg": 450
+    },
+    "expected": {
+      "raw": {
+        "nonhdl": 210
+      }
+    },
+    "originalInput": {
+      "ct": 250,
+      "hdl": 40,
+      "tg": 450
+    },
+    "expandedZeroOptions": []
+  }
+]
