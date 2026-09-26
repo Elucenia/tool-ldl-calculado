@@ -1,11 +1,11 @@
-/* tool-ldl-calculado · Elucenia · https://github.com/Elucenia/tool-ldl-calculado
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-ldl-calculado · ELUCENIA · https://github.com/Elucenia/tool-ldl-calculado
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"ldl-calculado","title":"LDL-colesterol calculado","fields":[["ct","Colesterol total","num",{"min":50,"max":800,"unit":"mg/dL","ph":"200"}],["hdl","HDL-colesterol","num",{"min":5,"max":200,"unit":"mg/dL","ph":"50"}],["tg","Triglicerídeos","num",{"min":10,"max":3000,"unit":"mg/dL","ph":"150"}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
