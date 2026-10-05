@@ -1,6 +1,14 @@
 [
   {
-    "label": "CT 200, HDL 50, TG 150: Friedewald 120 · Sampson ≈ 123 · não-HDL 150",
+    "id": "ldl-calculado",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "CT 200, HDL 50, TG 150: Friedewald 120 · Sampson ≈ 123 · não-HDL 150",
+    "originalInput": {
+      "ct": 200,
+      "hdl": 50,
+      "tg": 150
+    },
     "input": {
       "ct": 200,
       "hdl": 50,
@@ -14,15 +22,37 @@
       },
       "tol": 0.3
     },
-    "originalInput": {
-      "ct": 200,
-      "hdl": 50,
-      "tg": 150
+    "recordedResult": {
+      "main": [
+        "123",
+        "mg/dL"
+      ],
+      "label": "LDL-c (Sampson/NIH)",
+      "raw": {
+        "friedewald": 120,
+        "sampson": 123.39729061516445,
+        "nonhdl": 150
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "CT 250, HDL 40, TG 450: Friedewald não se aplica (TG ≥ 400)",
+    "id": "ldl-calculado",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "CT 250, HDL 40, TG 450: Friedewald não se aplica (TG ≥ 400)",
+    "originalInput": {
+      "ct": 250,
+      "hdl": 40,
+      "tg": 450
+    },
     "input": {
       "ct": 250,
       "hdl": 40,
@@ -33,11 +63,25 @@
         "nonhdl": 210
       }
     },
-    "originalInput": {
-      "ct": 250,
-      "hdl": 40,
-      "tg": 450
+    "recordedResult": {
+      "main": [
+        "129",
+        "mg/dL"
+      ],
+      "label": "LDL-c (Sampson/NIH)",
+      "raw": {
+        "friedewald": 120,
+        "sampson": 128.9271032615229,
+        "nonhdl": 210
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

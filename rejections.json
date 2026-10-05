@@ -1,0 +1,425 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field ct",
+    "input": {
+      "hdl": 50,
+      "tg": 150
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ct"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field ct",
+    "input": {
+      "ct": "",
+      "hdl": 50,
+      "tg": 150
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ct"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" ct",
+    "input": {
+      "ct": "NaN",
+      "hdl": 50,
+      "tg": 150
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ct"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" ct",
+    "input": {
+      "ct": "Infinity",
+      "hdl": 50,
+      "tg": 150
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ct"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" ct",
+    "input": {
+      "ct": "1e309",
+      "hdl": 50,
+      "tg": 150
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ct"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" ct",
+    "input": {
+      "ct": "invalid",
+      "hdl": 50,
+      "tg": 150
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ct"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} ct",
+    "input": {
+      "ct": {},
+      "hdl": 50,
+      "tg": 150
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ct"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true ct",
+    "input": {
+      "ct": true,
+      "hdl": 50,
+      "tg": 150
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ct"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum ct",
+    "input": {
+      "ct": 45,
+      "hdl": 50,
+      "tg": 150
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ct"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum ct",
+    "input": {
+      "ct": 880,
+      "hdl": 50,
+      "tg": 150
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ct"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field hdl",
+    "input": {
+      "ct": 200,
+      "tg": 150
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "hdl"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field hdl",
+    "input": {
+      "ct": 200,
+      "hdl": "",
+      "tg": 150
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "hdl"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" hdl",
+    "input": {
+      "ct": 200,
+      "hdl": "NaN",
+      "tg": 150
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hdl"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" hdl",
+    "input": {
+      "ct": 200,
+      "hdl": "Infinity",
+      "tg": 150
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hdl"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" hdl",
+    "input": {
+      "ct": 200,
+      "hdl": "1e309",
+      "tg": 150
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hdl"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" hdl",
+    "input": {
+      "ct": 200,
+      "hdl": "invalid",
+      "tg": 150
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hdl"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} hdl",
+    "input": {
+      "ct": 200,
+      "hdl": {},
+      "tg": 150
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hdl"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true hdl",
+    "input": {
+      "ct": 200,
+      "hdl": true,
+      "tg": 150
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hdl"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum hdl",
+    "input": {
+      "ct": 200,
+      "hdl": 4,
+      "tg": 150
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "hdl"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum hdl",
+    "input": {
+      "ct": 200,
+      "hdl": 220,
+      "tg": 150
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "hdl"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field tg",
+    "input": {
+      "ct": 200,
+      "hdl": 50
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field tg",
+    "input": {
+      "ct": 200,
+      "hdl": 50,
+      "tg": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" tg",
+    "input": {
+      "ct": 200,
+      "hdl": 50,
+      "tg": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" tg",
+    "input": {
+      "ct": 200,
+      "hdl": 50,
+      "tg": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" tg",
+    "input": {
+      "ct": 200,
+      "hdl": 50,
+      "tg": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" tg",
+    "input": {
+      "ct": 200,
+      "hdl": 50,
+      "tg": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} tg",
+    "input": {
+      "ct": 200,
+      "hdl": 50,
+      "tg": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true tg",
+    "input": {
+      "ct": 200,
+      "hdl": 50,
+      "tg": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum tg",
+    "input": {
+      "ct": 200,
+      "hdl": 50,
+      "tg": 9
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "tg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum tg",
+    "input": {
+      "ct": 200,
+      "hdl": 50,
+      "tg": 3300
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "tg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

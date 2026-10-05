@@ -3,13 +3,14 @@
     "id": "ldl-calculado",
     "title": "LDL-colesterol calculado",
     "short": "Friedewald, Sampson (NIH) e não-HDL",
+    "desc": "Calcule o LDL-colesterol pelas fórmulas de Friedewald e de Sampson (NIH 2020) e o colesterol não-HDL, com alerta para triglicerídeos altos.",
+    "lead": "Calcula o LDL-c pelas fórmulas de Friedewald e de Sampson (NIH) e o colesterol não-HDL a partir do perfil lipídico.",
+    "kind": "Calculadora",
     "spec": [
       "cardiologia",
       "endocrinologia-e-metabologia",
       "medicina-laboratorial"
     ],
-    "desc": "Calcule o LDL-colesterol pelas fórmulas de Friedewald e de Sampson (NIH 2020) e o colesterol não-HDL, com alerta para triglicerídeos altos.",
-    "lead": "Calcula o LDL-c pelas fórmulas de Friedewald e de Sampson (NIH) e o colesterol não-HDL a partir do perfil lipídico.",
     "fields": [
       [
         "ct",
@@ -46,12 +47,6 @@
       ]
     ],
     "formula": "<ul><li><strong>Não-HDL-c</strong> = CT − HDL</li><li><strong>Friedewald:</strong> LDL = CT − HDL − TG ÷ 5 (válida com TG &lt; 400 mg/dL)</li><li><strong>Sampson (NIH 2020):</strong> LDL = CT/0,948 − HDL/0,971 − (TG/8,56 + TG × não-HDL/2140 − TG²/16100) − 9,44 (válida até TG 800 mg/dL)</li></ul>",
-    "tips": [
-      "Com TG entre 150 e 400 mg/dL e LDL baixo (&lt; 70 mg/dL), Friedewald subestima o LDL: prefira Sampson, Martin-Hopkins ou a dosagem direta.",
-      "Com TG &gt; 400 mg/dL, Friedewald não deve ser usada; acima de 800 mg/dL, peça LDL direto.",
-      "O não-HDL-c reúne todas as partículas aterogênicas e é meta secundária (30 mg/dL acima da meta de LDL), útil sobretudo com TG altos e em diabéticos.",
-      "Colesterol total e HDL podem ser dosados sem jejum; se TG sem jejum &gt; 440 mg/dL, repita em jejum."
-    ],
     "sources": [
       [
         "Friedewald WT, Levy RI, Fredrickson DS. Estimation of the concentration of low-density lipoprotein cholesterol in plasma, without use of the preparative ultracentrifuge. Clin Chem, 1972.",
@@ -64,6 +59,10 @@
       [
         "Faludi AA et al. Atualização da Diretriz Brasileira de Dislipidemias e Prevenção da Aterosclerose – 2017. Arq Bras Cardiol.",
         "https://doi.org/10.5935/abc.20170121"
+      ],
+      [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7240357/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7240357/"
       ]
     ],
     "cases": [
@@ -97,9 +96,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -112,28 +108,174 @@
       "testedAt": "2026-09-25",
       "total": 1,
       "passed": 1,
-      "cases": [
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Friedewald 1972 TG<400 e Sampson NIH 2020 TG≤800; coeficientes 0,948/0,971/8,56/2140/16100/9,44",
+    "implementationVersion": "ldl-calculado@native-2026-10-03+020feed42a84",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/4337382/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Não-HDL-c = CT − HDL Friedewald: LDL = CT − HDL − TG ÷ 5 (válida com TG < 400 mg/dL) Sampson (NIH 2020): LDL = CT/0,948 − HDL/0,971 − (TG/8,56 + TG × não-HDL/2140 − TG²/16100) − 9,44 (válida até TG 800 mg/dL)",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "ct",
+            "label": "Colesterol total",
+            "type": "num",
+            "min": 50,
+            "max": 800,
+            "unit": "mg/dL",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "hdl",
+            "label": "HDL-colesterol",
+            "type": "num",
+            "min": 5,
+            "max": 200,
+            "unit": "mg/dL",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "tg",
+            "label": "Triglicerídeos",
+            "type": "num",
+            "min": 10,
+            "max": 3000,
+            "unit": "mg/dL",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "af208d801376271186f71c8bcac6046ee1fabf8384712286c1b7fc10c7bdf8eb"
+      },
+      "sourceEditions": [
         {
-          "label": "Não-HDL e Friedewald com unidades mg/dL",
-          "input": {
-            "ct": 240,
-            "hdl": 60,
-            "tg": 100
+          "citation": "Friedewald WT, Levy RI, Fredrickson DS. Estimation of the concentration of low-density lipoprotein cholesterol in plasma, without use of the preparative ultracentrifuge. Clin Chem, 1972.",
+          "url": "https://doi.org/10.1093/clinchem/18.6.499",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Estimation of the concentration of low-density lipoprotein cholesterol in plasma, without use of the preparative ultracentrifuge.",
+            "year": "1972",
+            "firstPublicationDate": "1972-06-01",
+            "doi": "10.1093/clinchem/18.6.499",
+            "pmid": "4337382",
+            "journal": "Clinical chemistry",
+            "authors": "Friedewald WT, Levy RI, Fredrickson DS."
           },
-          "expected": {
-            "nonhdl": 180,
-            "friedewald": 160
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/4337382/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Sampson M et al. A new equation for calculation of low-density lipoprotein cholesterol in patients with normolipidemia and/or hypertriglyceridemia. JAMA Cardiol, 2020.",
+          "url": "https://doi.org/10.1001/jamacardio.2020.0013",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "A New Equation for Calculation of Low-Density Lipoprotein Cholesterol in Patients With Normolipidemia and/or Hypertriglyceridemia.",
+            "year": "2020",
+            "firstPublicationDate": "2020-05-01",
+            "doi": "10.1001/jamacardio.2020.0013",
+            "pmid": "32101259",
+            "pmcid": "PMC7240357",
+            "journal": "JAMA cardiology",
+            "authors": "Sampson M, Ling C, Sun Q, Harb R, Ashmaig M, Warnick R, Sethi A, Fleming JK, Otvos JD, Meeusen JW, Delaney SR, Jaffe AS, Shamburek R, Amar M, Remaley AT."
           },
-          "status": "passed",
-          "failures": []
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7240357/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "0be5d52bf881a1c2211d0b03f0e1bf49cba6b85335f2216cabc43975b7be548e",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Faludi AA et al. Atualização da Diretriz Brasileira de Dislipidemias e Prevenção da Aterosclerose – 2017. Arq Bras Cardiol.",
+          "url": "https://doi.org/10.5935/abc.20170121",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Atualização da Diretriz Brasileira de Dislipidemias e Prevenção da Aterosclerose – 2017.",
+            "year": "2017",
+            "firstPublicationDate": "2017-07-01",
+            "doi": "10.5935/abc.20170121",
+            "pmid": "28813069",
+            "journal": "Arquivos brasileiros de cardiologia",
+            "authors": "Faludi AA, Izar MCO, Saraiva JFK, Chacra APM, Bianco HT, Afiune A, Bertolami A, Pereira AC, Lottenberg AM, Sposito AC, Chagas ACP, Casella A, Simão AF, Alencar AC, Caramelli B, Magalhães CC, Negrão CE, Ferreira CEDS, Scherr C, Feio CMA, Kovacs C, Araújo DB, Magnoni D, Calderaro D, Gualandro DM, Mello EP, Alexandre ERG, Sato EI, Moriguchi EH, Rached FH, Santos FCD, Cesena FHY, Fonseca FAH, Fonseca HARD, Xavier HT, Mota ICP, Giuliano ICB, Issa JS, Diament J, Pesquero JB, Santos JED, Faria JR, Melo JX, Kato JT, Torres KP, Bertolami MC, Assad MHV, Miname MH, Scartezini M, Forti NA, Coelho OR, Maranhão RC, Santos RDD, Alves RJ, Cassani RL, Betti RTB, Carvalho T, Martinez TLDR, Giraldez VZR, Salgado W."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/28813069/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-09-25",
+        "total": 1,
+        "passed": 1,
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "020feed42a84c1e8e2a88aab87e4f1ee5774bce79aa38996bdefbc3e03e2df5a"
+    },
+    "limits": "Sampson 2020 avaliou a estimativa de LDL-colesterol até triglicerídeos de 800 mg/dL; pessoas com hiperlipidemia tipo III foram excluídas. A amostra de desenvolvimento teve alta frequência de hipertrigliceridemia, com validação externa em outras populações. A fórmula estima, em vez de medir diretamente, o LDL-colesterol. Seus limites não devem ser transferidos à fórmula de Friedewald; preserve a variante escolhida, a unidade e o domínio de triglicerídeos informado para cada método.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:03.184Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Friedewald 1972 sem resumo. Restrições por triglicerídeos e fórmula Sampson 2020 precisam de textos distintos; leitura anterior Sampson da raiz pode ser vinculada sem alegar nova revisão integral."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "primarySupplements": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7240357/",
+          "scope": "Original Sampson2020 Methods/Limitations/Conclusions read. Targeted supplement only; not renewed full Friedewald1972 conformance."
         }
       ]
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/ldl-calculado/calculator.js",
+    "bytes": 5282,
+    "sha256": "020feed42a84c1e8e2a88aab87e4f1ee5774bce79aa38996bdefbc3e03e2df5a"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "977736002aa3bbfde7f8ef2e89cfa683ece041d32ead83192b50b290b392a1b4",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 1,
+      "sha256": "161644e076b288a71f02454923434b8d0efbca85e5062539d05871afa45d86f2",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 1,
+      "sha256": "161644e076b288a71f02454923434b8d0efbca85e5062539d05871afa45d86f2",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
