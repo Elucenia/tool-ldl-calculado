@@ -79,3 +79,31 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Compare with your cardiovascular risk target
+
+| Result details | |
+| --- | --- |
+| Non-HDL cholesterol | 150 mg/dL |
+| LDL-C (Sampson/NIH) | 123 mg/dL |
+| LDL-c (Friedewald) | 120 mg/dL |
+
+
+### 2
+
+Compare with your cardiovascular risk target
+
+| Result details | |
+| --- | --- |
+| Non-HDL cholesterol | 210 mg/dL |
+| LDL-C (Sampson/NIH) | 129 mg/dL |
+| LDL-c (Friedewald) | not applicable (TG ≥ 400) |
+
+Triglycerides ≥ 400 mg/dL: do not use Friedewald.
+

@@ -111,7 +111,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Friedewald 1972 TG<400 e Sampson NIH 2020 TG≤800; coeficientes 0,948/0,971/8,56/2140/16100/9,44",
-    "implementationVersion": "ldl-calculado@native-2026-10-03+020feed42a84",
+    "implementationVersion": "ldl-calculado@native-2026-10-05+04d29ca51b7c",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/4337382/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -234,7 +234,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "020feed42a84c1e8e2a88aab87e4f1ee5774bce79aa38996bdefbc3e03e2df5a"
+      "implementationHash": "04d29ca51b7ce8323a54da5532df87b5664e2000f743cbe65c0e5d64aae07209",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "ldl-calculado@native-2026-10-03+020feed42a84",
+          "previousImplementationHash": "020feed42a84c1e8e2a88aab87e4f1ee5774bce79aa38996bdefbc3e03e2df5a",
+          "implementationHash": "04d29ca51b7ce8323a54da5532df87b5664e2000f743cbe65c0e5d64aae07209",
+          "scientificBodySha256": "d87221637bc2080ee8fa617de0e924e9e383ddd864ff99a89d7c8f506505c5ca",
+          "metadataContractHash": "af208d801376271186f71c8bcac6046ee1fabf8384712286c1b7fc10c7bdf8eb",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Sampson 2020 avaliou a estimativa de LDL-colesterol até triglicerídeos de 800 mg/dL; pessoas com hiperlipidemia tipo III foram excluídas. A amostra de desenvolvimento teve alta frequência de hipertrigliceridemia, com validação externa em outras populações. A fórmula estima, em vez de medir diretamente, o LDL-colesterol. Seus limites não devem ser transferidos à fórmula de Friedewald; preserve a variante escolhida, a unidade e o domínio de triglicerídeos informado para cada método.",
     "sourceLimitEvidence": {
@@ -259,20 +287,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/ldl-calculado/calculator.js",
-    "bytes": 5282,
-    "sha256": "020feed42a84c1e8e2a88aab87e4f1ee5774bce79aa38996bdefbc3e03e2df5a"
+    "bytes": 5487,
+    "sha256": "04d29ca51b7ce8323a54da5532df87b5664e2000f743cbe65c0e5d64aae07209"
   },
-  "sourceToolSha256": "977736002aa3bbfde7f8ef2e89cfa683ece041d32ead83192b50b290b392a1b4",
+  "sourceToolSha256": "68ec777596aa387bb3f643139170fcb37f16295a6e2088017ce04ac00031b26e",
   "omittedFullReferenceBanks": [
     {
       "rows": 1,
       "sha256": "161644e076b288a71f02454923434b8d0efbca85e5062539d05871afa45d86f2",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 1,
       "sha256": "161644e076b288a71f02454923434b8d0efbca85e5062539d05871afa45d86f2",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

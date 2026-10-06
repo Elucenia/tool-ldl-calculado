@@ -1,0 +1,161 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "ldl-calculado",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "55bf5572b14c19eb9b80afc346b568ca9ee23319",
+    "oldEngineSha256": "020feed42a84c1e8e2a88aab87e4f1ee5774bce79aa38996bdefbc3e03e2df5a",
+    "currentEngineSha256": "04d29ca51b7ce8323a54da5532df87b5664e2000f743cbe65c0e5d64aae07209"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "CT 200, HDL 50, TG 150: Friedewald 120 · Sampson ≈ 123 · não-HDL 150",
+      "input": {
+        "ct": 200,
+        "hdl": 50,
+        "tg": 150
+      },
+      "publicOutput": {
+        "id": "ldl-calculado",
+        "main": [
+          "123",
+          "mg/dL"
+        ],
+        "label": "LDL-c (Sampson/NIH)",
+        "raw": {
+          "friedewald": 120,
+          "sampson": 123.39729061516445,
+          "nonhdl": 150
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "friedewald": 120,
+          "sampson": 123.4,
+          "nonhdl": 150
+        },
+        "tol": 0.3
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "123",
+          "mg/dL"
+        ],
+        "label": "LDL-c (Sampson/NIH)",
+        "level": "info",
+        "verdict": "Compare com a meta do seu risco cardiovascular",
+        "rows": [
+          [
+            "Colesterol não-HDL",
+            "150 mg/dL"
+          ],
+          [
+            "LDL-c (Sampson/NIH)",
+            "123 mg/dL"
+          ],
+          [
+            "LDL-c (Friedewald)",
+            "120 mg/dL"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "friedewald": 120,
+          "sampson": 123.39729061516445,
+          "nonhdl": 150
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "CT 250, HDL 40, TG 450: Friedewald não se aplica (TG ≥ 400)",
+      "input": {
+        "ct": 250,
+        "hdl": 40,
+        "tg": 450
+      },
+      "publicOutput": {
+        "id": "ldl-calculado",
+        "main": [
+          "129",
+          "mg/dL"
+        ],
+        "label": "LDL-c (Sampson/NIH)",
+        "raw": {
+          "friedewald": 120,
+          "sampson": 128.9271032615229,
+          "nonhdl": 210
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "nonhdl": 210
+        }
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "129",
+          "mg/dL"
+        ],
+        "label": "LDL-c (Sampson/NIH)",
+        "level": "info",
+        "verdict": "Compare com a meta do seu risco cardiovascular",
+        "rows": [
+          [
+            "Colesterol não-HDL",
+            "210 mg/dL"
+          ],
+          [
+            "LDL-c (Sampson/NIH)",
+            "129 mg/dL"
+          ],
+          [
+            "LDL-c (Friedewald)",
+            "não aplicável (TG ≥ 400)"
+          ]
+        ],
+        "note": "Triglicerídeos ≥ 400 mg/dL: não use Friedewald.",
+        "raw": {
+          "friedewald": 120,
+          "sampson": 128.9271032615229,
+          "nonhdl": 210
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    }
+  ]
+}

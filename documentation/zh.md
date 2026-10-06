@@ -79,3 +79,31 @@ tool.json 包含来源、版本和审查范围。examples.json 保留合成输�
 Apache-2.0 仅适用于 ELUCENIA 代码。工具、出版物、翻译和数据的权利仍归各自权利人所有。请保留 LICENSE 和 NOTICE。
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## 已记录的结果
+
+以下信息保留该方法对合成示例的输出，不构成独立的临床验证。
+
+### 1
+
+与您的心血管风险目标比较
+
+| 结果详情 | |
+| --- | --- |
+| 非 HDL 胆固醇 | 150 mg/dL |
+| LDL-c (Sampson/NIH) | 123 mg/dL |
+| LDL-c（Friedewald） | 120 mg/dL |
+
+
+### 2
+
+与您的心血管风险目标比较
+
+| 结果详情 | |
+| --- | --- |
+| 非 HDL 胆固醇 | 210 mg/dL |
+| LDL-c (Sampson/NIH) | 129 mg/dL |
+| LDL-c（Friedewald） | 不适用 (TG ≥ 400) |
+
+甘油三酯 ≥ 400 mg/dL：不要使用 Friedewald。
+

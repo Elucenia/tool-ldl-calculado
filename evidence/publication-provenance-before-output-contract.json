@@ -1,0 +1,332 @@
+{
+  "schema": "elucenia-native-current-package-R6-HTTP-linked-r5",
+  "id": "ldl-calculado",
+  "repository": "Elucenia/tool-ldl-calculado",
+  "remoteBase": {
+    "id": "ldl-calculado",
+    "repository": "Elucenia/tool-ldl-calculado",
+    "branch": "main",
+    "commit": "0168388d01898f79d304df1c39cbd2ee5d457e92",
+    "archiveSha256": "ef16b0df0dc5cc0e54c9d6c1582df17a4beba82a6cc8d3066310d6ebd41c3c82",
+    "protectedFiles": [
+      {
+        "path": ".gitattributes",
+        "type": "blob",
+        "mode": "100644",
+        "size": 19,
+        "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+        "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+      },
+      {
+        "path": ".github/workflows/ci.yml",
+        "type": "blob",
+        "mode": "100644",
+        "size": 279,
+        "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+        "sha256": "bdbefea1fc6b1d8847725c698f62920917bc8d6504bfe8ed622ed2d5aaf7f160"
+      },
+      {
+        "path": ".gitignore",
+        "type": "blob",
+        "mode": "100644",
+        "size": 42,
+        "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+        "sha256": "763fb702ccbb9bfd8549ca3d0844c731b22aca4e665a2b61d1bb764b64f734d8"
+      },
+      {
+        "path": "AUTHORSHIP.md",
+        "type": "blob",
+        "mode": "100644",
+        "size": 3273,
+        "sha": "a6ca62624fdcd5023043912f5b97a7e42a4dc226",
+        "sha256": "07a7871b0f6ffa6ff83a5239e7efdabd60ff00902647e5f685188cdb54fd8b7e"
+      },
+      {
+        "path": "CITATION.cff",
+        "type": "blob",
+        "mode": "100644",
+        "size": 892,
+        "sha": "5ecf39473ec033950a3e3b07eb1c711f46557bcb",
+        "sha256": "ee1ff17eb3e1b995d8fa51d8985c6c348647c62520ed198400be25b8f246f671"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "type": "blob",
+        "mode": "100644",
+        "size": 1464,
+        "sha": "54bd3e11b02c79176246ba0ec2194acc0b4fbe46",
+        "sha256": "b4dfba40730d43b1b4d960d6e7f7415517c0530810509f04e461dbaa7cc92e09"
+      },
+      {
+        "path": "LICENSE",
+        "type": "blob",
+        "mode": "100644",
+        "size": 11358,
+        "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      },
+      {
+        "path": "NOTICE",
+        "type": "blob",
+        "mode": "100644",
+        "size": 1616,
+        "sha": "0ada90f93a972f5ade841d4a27e9491097ad3c3a",
+        "sha256": "5f926ce1ff76b11d355fec6c60b88dd5519fff6226f6566364c5c94b27ab2375"
+      },
+      {
+        "path": "SECURITY.md",
+        "type": "blob",
+        "mode": "100644",
+        "size": 894,
+        "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+        "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
+      }
+    ],
+    "receipt": {
+      "file": "reports/review-20261005-completion/native190-protected-remote-baseline-r1.json",
+      "bytes": 6066154,
+      "sha256": "ec8bac70e5a6eed7fb742c319c4e68344eea5713350fa16b9d9bf48e014a9a88"
+    },
+    "remoteCodeExecuted": false,
+    "freshBranchReadRequiredBeforePublication": true
+  },
+  "priorAuthorialStandalone": {
+    "file": "reports/review-20261003/github-publication-candidate-final36-v4.json",
+    "bytes": 6823260,
+    "sha256": "a3c528b12d7b5416fa0e62dda9e5106864bae7ff86710fa765934b5a3069e16c"
+  },
+  "currentSource": {
+    "file": "apps/website/private/tool-code/ldl-calculado/calculator.js",
+    "bytes": 5282,
+    "sha256": "020feed42a84c1e8e2a88aab87e4f1ee5774bce79aa38996bdefbc3e03e2df5a"
+  },
+  "browserAdapterIdentical": true,
+  "methodVersion": "Friedewald 1972 TG<400 e Sampson NIH 2020 TG≤800; coeficientes 0,948/0,971/8,56/2140/16100/9,44",
+  "implementationVersion": "ldl-calculado@native-2026-10-03+020feed42a84",
+  "locales": [
+    "pt-BR",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ar",
+    "zh",
+    "ja",
+    "hi"
+  ],
+  "sourceSnapshots": [
+    {
+      "file": "apps/dashboard/private/localization/pt-BR.json",
+      "bytes": 13601911,
+      "sha256": "347c306e9e588d9bff853ab948f100b2ce00d7adb88efb821e39c2799deb1806"
+    },
+    {
+      "file": "apps/dashboard/private/localization/en.json",
+      "bytes": 13681895,
+      "sha256": "e14119d6179a16e4af0998cb86cd7332e72eccae8a8257000b4ea940a5919f2b"
+    },
+    {
+      "file": "apps/dashboard/private/localization/es.json",
+      "bytes": 13727824,
+      "sha256": "52dce27b11b7d4bd0b0e599e66e24beb802f99068554f76c34ef81c98d7e164f"
+    },
+    {
+      "file": "apps/dashboard/private/localization/fr.json",
+      "bytes": 13775177,
+      "sha256": "e4ffcf4c7a5378bb9527a544548c6d8364aa309ea38f567359f8f198eee6c7c9"
+    },
+    {
+      "file": "apps/dashboard/private/localization/de.json",
+      "bytes": 13749397,
+      "sha256": "c92817a3fa8412a4f878061d3ac1c56be6d114aae1c3232c25f79c6ce7d597f4"
+    },
+    {
+      "file": "apps/dashboard/private/localization/it.json",
+      "bytes": 13726317,
+      "sha256": "5c7c142087de8016a75759669a7271a9048d9544b1a1383c626fafa7be0ece39"
+    },
+    {
+      "file": "apps/dashboard/private/localization/ar.json",
+      "bytes": 13962469,
+      "sha256": "c3a3cf978eeac700c01847f49bc4dd12759499a6973fa36733bc290786f9246d"
+    },
+    {
+      "file": "apps/dashboard/private/localization/zh.json",
+      "bytes": 13590420,
+      "sha256": "eb2c7d8d5b980d6d43e44bcc135bcde31565fab0290bf595f84975dec6fb294e"
+    },
+    {
+      "file": "apps/dashboard/private/localization/ja.json",
+      "bytes": 13729894,
+      "sha256": "eb524f45c7e9ce0fc3e951b159c102294d6702a1858a1f43f7e920c69fa1a290"
+    },
+    {
+      "file": "apps/dashboard/private/localization/hi.json",
+      "bytes": 14418664,
+      "sha256": "fe93d7fc31e91ed8c9d3acee80261a2f8ad74b77c86e6e28f9b4cadf5d9f048f"
+    }
+  ],
+  "referenceBank": {
+    "file": "reports/review-20261003/source-cases-audit.json",
+    "bytes": 885399,
+    "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+  },
+  "comparisonProgram": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "bytes": 20735,
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa"
+  },
+  "sourceNodeParityPassed": true,
+  "browserVmParityPassed": true,
+  "actualBrowserDomVerified": false,
+  "currentActualR6HttpEvidence": {
+    "path": "evidence/served-http-r6.json",
+    "bytes": 15965,
+    "sha256": "10c9962cecade9b4c7d84911d82ae663de0021ca17cd7f9f9f9a674b22edfe31",
+    "sourceReceipt": {
+      "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+      "bytes": 7105396,
+      "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+    },
+    "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+    "sourceCalculator": {
+      "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/ldl-calculado/calculator.js",
+      "sha256": "020feed42a84c1e8e2a88aab87e4f1ee5774bce79aa38996bdefbc3e03e2df5a",
+      "bytes": 5282
+    },
+    "cases": 2,
+    "status": "passed"
+  },
+  "rights": {
+    "ownCodeScope": "Current MIT adapter and original Apache standalone wrapper/support; exact original licences and notices coexist without rewriting",
+    "sourceAdapter": {
+      "file": "apps/website/private/tool-code/ldl-calculado/calculator.js",
+      "bytes": 5282,
+      "sha256": "020feed42a84c1e8e2a88aab87e4f1ee5774bce79aa38996bdefbc3e03e2df5a"
+    },
+    "currentLegalFiles": [
+      {
+        "file": "apps/command-center/private/tool-code/ldl-calculado/LICENSE",
+        "bytes": 1229,
+        "sha256": "51c010d285894558695812b9883d9c9ae7c9c89526f43597917e778965e65d93"
+      },
+      {
+        "file": "apps/command-center/private/tool-code/ldl-calculado/NOTICE.md",
+        "bytes": 1183,
+        "sha256": "b7d5eaa1074d1673caf885ac49b38e9b54b2c6086b45072eacf7b3fe139d8a6d"
+      }
+    ],
+    "protectedRemoteFiles": [
+      {
+        "path": ".gitattributes",
+        "type": "blob",
+        "mode": "100644",
+        "size": 19,
+        "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+        "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+      },
+      {
+        "path": ".github/workflows/ci.yml",
+        "type": "blob",
+        "mode": "100644",
+        "size": 279,
+        "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+        "sha256": "bdbefea1fc6b1d8847725c698f62920917bc8d6504bfe8ed622ed2d5aaf7f160"
+      },
+      {
+        "path": ".gitignore",
+        "type": "blob",
+        "mode": "100644",
+        "size": 42,
+        "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+        "sha256": "763fb702ccbb9bfd8549ca3d0844c731b22aca4e665a2b61d1bb764b64f734d8"
+      },
+      {
+        "path": "AUTHORSHIP.md",
+        "type": "blob",
+        "mode": "100644",
+        "size": 3273,
+        "sha": "a6ca62624fdcd5023043912f5b97a7e42a4dc226",
+        "sha256": "07a7871b0f6ffa6ff83a5239e7efdabd60ff00902647e5f685188cdb54fd8b7e"
+      },
+      {
+        "path": "CITATION.cff",
+        "type": "blob",
+        "mode": "100644",
+        "size": 892,
+        "sha": "5ecf39473ec033950a3e3b07eb1c711f46557bcb",
+        "sha256": "ee1ff17eb3e1b995d8fa51d8985c6c348647c62520ed198400be25b8f246f671"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "type": "blob",
+        "mode": "100644",
+        "size": 1464,
+        "sha": "54bd3e11b02c79176246ba0ec2194acc0b4fbe46",
+        "sha256": "b4dfba40730d43b1b4d960d6e7f7415517c0530810509f04e461dbaa7cc92e09"
+      },
+      {
+        "path": "LICENSE",
+        "type": "blob",
+        "mode": "100644",
+        "size": 11358,
+        "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      },
+      {
+        "path": "NOTICE",
+        "type": "blob",
+        "mode": "100644",
+        "size": 1616,
+        "sha": "0ada90f93a972f5ade841d4a27e9491097ad3c3a",
+        "sha256": "5f926ce1ff76b11d355fec6c60b88dd5519fff6226f6566364c5c94b27ab2375"
+      },
+      {
+        "path": "SECURITY.md",
+        "type": "blob",
+        "mode": "100644",
+        "size": 894,
+        "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+        "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
+      }
+    ],
+    "sourceMaterialScope": "Published mathematical/Boolean method implemented in ELUCENIA code; source-specific clinical descriptions and questionnaire expression remain separate from code ownership/licensing",
+    "scientificSources": [
+      [
+        "Friedewald WT, Levy RI, Fredrickson DS. Estimation of the concentration of low-density lipoprotein cholesterol in plasma, without use of the preparative ultracentrifuge. Clin Chem, 1972.",
+        "https://doi.org/10.1093/clinchem/18.6.499"
+      ],
+      [
+        "Sampson M et al. A new equation for calculation of low-density lipoprotein cholesterol in patients with normolipidemia and/or hypertriglyceridemia. JAMA Cardiol, 2020.",
+        "https://doi.org/10.1001/jamacardio.2020.0013"
+      ],
+      [
+        "Faludi AA et al. Atualização da Diretriz Brasileira de Dislipidemias e Prevenção da Aterosclerose – 2017. Arq Bras Cardiol.",
+        "https://doi.org/10.5935/abc.20170121"
+      ],
+      [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7240357/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7240357/"
+      ]
+    ],
+    "methodVersion": "Friedewald 1972 TG<400 e Sampson NIH 2020 TG≤800; coeficientes 0,948/0,971/8,56/2140/16100/9,44",
+    "grantRecordedInNotice": true,
+    "thirdPartyInstrumentRightsApproval": "not-performed",
+    "wholeInstrumentApproval": false,
+    "professionalTranslationApproval": false,
+    "clinicalApproval": false,
+    "remainingScopeReview": "Check source-specific wording, questionnaire/instrument and translation conditions before treating the complete mixed bundle as cleared; no grant is inferred from public accessibility or code licence"
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "externalPublicationReady": false,
+  "publicationPerformed": false,
+  "appWrites": false,
+  "deliveryWrites": false,
+  "preparedFrom": {
+    "file": "reports/review-20261005-completion/native187-current-candidates-r2.json",
+    "bytes": 2785936,
+    "sha256": "2fe0448a9680b4a50b34235469d7cb36b3e8075ce0559d700f59442007cfb0f9"
+  }
+}

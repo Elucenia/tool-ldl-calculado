@@ -79,3 +79,31 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Vergleichen Sie mit dem Zielwert Ihres kardiovaskulären Risikos
+
+| Ergebnisdetails | |
+| --- | --- |
+| Nicht-HDL-Cholesterin | 150 mg/dL |
+| LDL-C (Sampson/NIH) | 123 mg/dL |
+| LDL-c (Friedewald) | 120 mg/dL |
+
+
+### 2
+
+Vergleichen Sie mit dem Zielwert Ihres kardiovaskulären Risikos
+
+| Ergebnisdetails | |
+| --- | --- |
+| Nicht-HDL-Cholesterin | 210 mg/dL |
+| LDL-C (Sampson/NIH) | 129 mg/dL |
+| LDL-c (Friedewald) | nicht anwendbar (TG ≥ 400) |
+
+Triglyzeride ≥ 400 mg/dL: Friedewald nicht verwenden.
+

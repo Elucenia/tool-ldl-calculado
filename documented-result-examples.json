@@ -1,0 +1,1252 @@
+{
+  "id": "ldl-calculado",
+  "implementationVersion": "ldl-calculado@native-2026-10-05+04d29ca51b7c",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "CT 200, HDL 50, TG 150: Friedewald 120 · Sampson ≈ 123 · não-HDL 150",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Colesterol não-HDL",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "150 mg/dL",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDL-c (Sampson/NIH)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "123 mg/dL",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDL-c (Friedewald)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "120 mg/dL",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Compare com a meta do seu risco cardiovascular",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "CT 250, HDL 40, TG 450: Friedewald não se aplica (TG ≥ 400)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Colesterol não-HDL",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "210 mg/dL",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDL-c (Sampson/NIH)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "129 mg/dL",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDL-c (Friedewald)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "não aplicável (TG ≥ 400)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Compare com a meta do seu risco cardiovascular",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Triglicerídeos ≥ 400 mg/dL: não use Friedewald.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "CT 200, HDL 50, TG 150: Friedewald 120 · Sampson ≈ 123 · não-HDL 150",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Non-HDL cholesterol",
+                "locale": "en",
+                "template": "documented-authored-36eca56b5d2616c85fd7"
+              },
+              "value": {
+                "text": "150 mg/dL",
+                "locale": "en",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  150
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDL-C (Sampson/NIH)",
+                "locale": "en",
+                "template": "documented-authored-bce33b617c20edcd0c8e"
+              },
+              "value": {
+                "text": "123 mg/dL",
+                "locale": "en",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  123
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDL-c (Friedewald)",
+                "locale": "en",
+                "template": "documented-authored-a1ca833b419b86f64f24"
+              },
+              "value": {
+                "text": "120 mg/dL",
+                "locale": "en",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  120
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Compare with your cardiovascular risk target",
+            "locale": "en",
+            "template": "documented-authored-2654b72374ea20903147"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "CT 250, HDL 40, TG 450: Friedewald não se aplica (TG ≥ 400)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Non-HDL cholesterol",
+                "locale": "en",
+                "template": "documented-authored-36eca56b5d2616c85fd7"
+              },
+              "value": {
+                "text": "210 mg/dL",
+                "locale": "en",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  210
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDL-C (Sampson/NIH)",
+                "locale": "en",
+                "template": "documented-authored-bce33b617c20edcd0c8e"
+              },
+              "value": {
+                "text": "129 mg/dL",
+                "locale": "en",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  129
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDL-c (Friedewald)",
+                "locale": "en",
+                "template": "documented-authored-a1ca833b419b86f64f24"
+              },
+              "value": {
+                "text": "not applicable (TG ≥ 400)",
+                "locale": "en",
+                "template": "documented-authored-b8407d5cbabc4fbccd42"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Compare with your cardiovascular risk target",
+            "locale": "en",
+            "template": "documented-authored-2654b72374ea20903147"
+          },
+          "note": {
+            "text": "Triglycerides ≥ 400 mg/dL: do not use Friedewald.",
+            "locale": "en",
+            "template": "documented-authored-1281a277f961192b8613"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "CT 200, HDL 50, TG 150: Friedewald 120 · Sampson ≈ 123 · não-HDL 150",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Colesterol no HDL",
+                "locale": "es",
+                "template": "documented-authored-36eca56b5d2616c85fd7"
+              },
+              "value": {
+                "text": "150 mg/dL",
+                "locale": "es",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  150
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDL-c (Sampson/NIH)",
+                "locale": "es",
+                "template": "documented-authored-bce33b617c20edcd0c8e"
+              },
+              "value": {
+                "text": "123 mg/dL",
+                "locale": "es",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  123
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDL-c (Friedewald)",
+                "locale": "es",
+                "template": "documented-authored-a1ca833b419b86f64f24"
+              },
+              "value": {
+                "text": "120 mg/dL",
+                "locale": "es",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  120
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Compare con la meta de su riesgo cardiovascular",
+            "locale": "es",
+            "template": "documented-authored-2654b72374ea20903147"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "CT 250, HDL 40, TG 450: Friedewald não se aplica (TG ≥ 400)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Colesterol no HDL",
+                "locale": "es",
+                "template": "documented-authored-36eca56b5d2616c85fd7"
+              },
+              "value": {
+                "text": "210 mg/dL",
+                "locale": "es",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  210
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDL-c (Sampson/NIH)",
+                "locale": "es",
+                "template": "documented-authored-bce33b617c20edcd0c8e"
+              },
+              "value": {
+                "text": "129 mg/dL",
+                "locale": "es",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  129
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDL-c (Friedewald)",
+                "locale": "es",
+                "template": "documented-authored-a1ca833b419b86f64f24"
+              },
+              "value": {
+                "text": "no aplicable (TG ≥ 400)",
+                "locale": "es",
+                "template": "documented-authored-b8407d5cbabc4fbccd42"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Compare con la meta de su riesgo cardiovascular",
+            "locale": "es",
+            "template": "documented-authored-2654b72374ea20903147"
+          },
+          "note": {
+            "text": "Triglicéridos ≥ 400 mg/dL: no use Friedewald.",
+            "locale": "es",
+            "template": "documented-authored-1281a277f961192b8613"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "CT 200, HDL 50, TG 150: Friedewald 120 · Sampson ≈ 123 · não-HDL 150",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Cholestérol non-HDL",
+                "locale": "fr",
+                "template": "documented-authored-36eca56b5d2616c85fd7"
+              },
+              "value": {
+                "text": "150 mg/dL",
+                "locale": "fr",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  150
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDL-c (Sampson/NIH)",
+                "locale": "fr",
+                "template": "documented-authored-bce33b617c20edcd0c8e"
+              },
+              "value": {
+                "text": "123 mg/dL",
+                "locale": "fr",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  123
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDL-c (Friedewald)",
+                "locale": "fr",
+                "template": "documented-authored-a1ca833b419b86f64f24"
+              },
+              "value": {
+                "text": "120 mg/dL",
+                "locale": "fr",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  120
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Comparer avec la cible de votre risque cardiovasculaire",
+            "locale": "fr",
+            "template": "documented-authored-2654b72374ea20903147"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "CT 250, HDL 40, TG 450: Friedewald não se aplica (TG ≥ 400)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Cholestérol non-HDL",
+                "locale": "fr",
+                "template": "documented-authored-36eca56b5d2616c85fd7"
+              },
+              "value": {
+                "text": "210 mg/dL",
+                "locale": "fr",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  210
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDL-c (Sampson/NIH)",
+                "locale": "fr",
+                "template": "documented-authored-bce33b617c20edcd0c8e"
+              },
+              "value": {
+                "text": "129 mg/dL",
+                "locale": "fr",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  129
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDL-c (Friedewald)",
+                "locale": "fr",
+                "template": "documented-authored-a1ca833b419b86f64f24"
+              },
+              "value": {
+                "text": "non applicable (TG ≥ 400)",
+                "locale": "fr",
+                "template": "documented-authored-b8407d5cbabc4fbccd42"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Comparer avec la cible de votre risque cardiovasculaire",
+            "locale": "fr",
+            "template": "documented-authored-2654b72374ea20903147"
+          },
+          "note": {
+            "text": "Triglycérides ≥ 400 mg/dL : n’utilisez pas Friedewald.",
+            "locale": "fr",
+            "template": "documented-authored-1281a277f961192b8613"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "CT 200, HDL 50, TG 150: Friedewald 120 · Sampson ≈ 123 · não-HDL 150",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Nicht-HDL-Cholesterin",
+                "locale": "de",
+                "template": "documented-authored-36eca56b5d2616c85fd7"
+              },
+              "value": {
+                "text": "150 mg/dL",
+                "locale": "de",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  150
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDL-C (Sampson/NIH)",
+                "locale": "de",
+                "template": "documented-authored-bce33b617c20edcd0c8e"
+              },
+              "value": {
+                "text": "123 mg/dL",
+                "locale": "de",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  123
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDL-c (Friedewald)",
+                "locale": "de",
+                "template": "documented-authored-a1ca833b419b86f64f24"
+              },
+              "value": {
+                "text": "120 mg/dL",
+                "locale": "de",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  120
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Vergleichen Sie mit dem Zielwert Ihres kardiovaskulären Risikos",
+            "locale": "de",
+            "template": "documented-authored-2654b72374ea20903147"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "CT 250, HDL 40, TG 450: Friedewald não se aplica (TG ≥ 400)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Nicht-HDL-Cholesterin",
+                "locale": "de",
+                "template": "documented-authored-36eca56b5d2616c85fd7"
+              },
+              "value": {
+                "text": "210 mg/dL",
+                "locale": "de",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  210
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDL-C (Sampson/NIH)",
+                "locale": "de",
+                "template": "documented-authored-bce33b617c20edcd0c8e"
+              },
+              "value": {
+                "text": "129 mg/dL",
+                "locale": "de",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  129
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDL-c (Friedewald)",
+                "locale": "de",
+                "template": "documented-authored-a1ca833b419b86f64f24"
+              },
+              "value": {
+                "text": "nicht anwendbar (TG ≥ 400)",
+                "locale": "de",
+                "template": "documented-authored-b8407d5cbabc4fbccd42"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Vergleichen Sie mit dem Zielwert Ihres kardiovaskulären Risikos",
+            "locale": "de",
+            "template": "documented-authored-2654b72374ea20903147"
+          },
+          "note": {
+            "text": "Triglyzeride ≥ 400 mg/dL: Friedewald nicht verwenden.",
+            "locale": "de",
+            "template": "documented-authored-1281a277f961192b8613"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "CT 200, HDL 50, TG 150: Friedewald 120 · Sampson ≈ 123 · não-HDL 150",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Colesterolo non-HDL",
+                "locale": "it",
+                "template": "documented-authored-36eca56b5d2616c85fd7"
+              },
+              "value": {
+                "text": "150 mg/dL",
+                "locale": "it",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  150
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDL-C (Sampson/NIH)",
+                "locale": "it",
+                "template": "documented-authored-bce33b617c20edcd0c8e"
+              },
+              "value": {
+                "text": "123 mg/dL",
+                "locale": "it",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  123
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDL-c (Friedewald)",
+                "locale": "it",
+                "template": "documented-authored-a1ca833b419b86f64f24"
+              },
+              "value": {
+                "text": "120 mg/dL",
+                "locale": "it",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  120
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Confronta con il target del tuo rischio cardiovascolare",
+            "locale": "it",
+            "template": "documented-authored-2654b72374ea20903147"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "CT 250, HDL 40, TG 450: Friedewald não se aplica (TG ≥ 400)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Colesterolo non-HDL",
+                "locale": "it",
+                "template": "documented-authored-36eca56b5d2616c85fd7"
+              },
+              "value": {
+                "text": "210 mg/dL",
+                "locale": "it",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  210
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDL-C (Sampson/NIH)",
+                "locale": "it",
+                "template": "documented-authored-bce33b617c20edcd0c8e"
+              },
+              "value": {
+                "text": "129 mg/dL",
+                "locale": "it",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  129
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDL-c (Friedewald)",
+                "locale": "it",
+                "template": "documented-authored-a1ca833b419b86f64f24"
+              },
+              "value": {
+                "text": "non applicabile (TG ≥ 400)",
+                "locale": "it",
+                "template": "documented-authored-b8407d5cbabc4fbccd42"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Confronta con il target del tuo rischio cardiovascolare",
+            "locale": "it",
+            "template": "documented-authored-2654b72374ea20903147"
+          },
+          "note": {
+            "text": "Trigliceridi ≥ 400 mg/dL: non usare Friedewald.",
+            "locale": "it",
+            "template": "documented-authored-1281a277f961192b8613"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "CT 200, HDL 50, TG 150: Friedewald 120 · Sampson ≈ 123 · não-HDL 150",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الكوليسترول غير HDL",
+                "locale": "ar",
+                "template": "documented-authored-36eca56b5d2616c85fd7"
+              },
+              "value": {
+                "text": "١٥٠ mg/dL",
+                "locale": "ar",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  150
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDL-c (Sampson/NIH)",
+                "locale": "ar",
+                "template": "documented-authored-bce33b617c20edcd0c8e"
+              },
+              "value": {
+                "text": "١٢٣ mg/dL",
+                "locale": "ar",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  123
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDL-c (Friedewald)",
+                "locale": "ar",
+                "template": "documented-authored-a1ca833b419b86f64f24"
+              },
+              "value": {
+                "text": "١٢٠ mg/dL",
+                "locale": "ar",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  120
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "قارن مع الهدف الخاص بخطر الإصابة بأمراض القلب والأوعية الدموية لديك",
+            "locale": "ar",
+            "template": "documented-authored-2654b72374ea20903147"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "CT 250, HDL 40, TG 450: Friedewald não se aplica (TG ≥ 400)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الكوليسترول غير HDL",
+                "locale": "ar",
+                "template": "documented-authored-36eca56b5d2616c85fd7"
+              },
+              "value": {
+                "text": "٢١٠ mg/dL",
+                "locale": "ar",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  210
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDL-c (Sampson/NIH)",
+                "locale": "ar",
+                "template": "documented-authored-bce33b617c20edcd0c8e"
+              },
+              "value": {
+                "text": "١٢٩ mg/dL",
+                "locale": "ar",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  129
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDL-c (Friedewald)",
+                "locale": "ar",
+                "template": "documented-authored-a1ca833b419b86f64f24"
+              },
+              "value": {
+                "text": "غير قابل للتطبيق (TG ≥ 400)",
+                "locale": "ar",
+                "template": "documented-authored-b8407d5cbabc4fbccd42"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "قارن مع الهدف الخاص بخطر الإصابة بأمراض القلب والأوعية الدموية لديك",
+            "locale": "ar",
+            "template": "documented-authored-2654b72374ea20903147"
+          },
+          "note": {
+            "text": "الدهون الثلاثية ≥ 400 mg/dL: لا تستخدم Friedewald.",
+            "locale": "ar",
+            "template": "documented-authored-1281a277f961192b8613"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "CT 200, HDL 50, TG 150: Friedewald 120 · Sampson ≈ 123 · não-HDL 150",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "非 HDL 胆固醇",
+                "locale": "zh",
+                "template": "documented-authored-36eca56b5d2616c85fd7"
+              },
+              "value": {
+                "text": "150 mg/dL",
+                "locale": "zh",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  150
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDL-c (Sampson/NIH)",
+                "locale": "zh",
+                "template": "documented-authored-bce33b617c20edcd0c8e"
+              },
+              "value": {
+                "text": "123 mg/dL",
+                "locale": "zh",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  123
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDL-c（Friedewald）",
+                "locale": "zh",
+                "template": "documented-authored-a1ca833b419b86f64f24"
+              },
+              "value": {
+                "text": "120 mg/dL",
+                "locale": "zh",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  120
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "与您的心血管风险目标比较",
+            "locale": "zh",
+            "template": "documented-authored-2654b72374ea20903147"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "CT 250, HDL 40, TG 450: Friedewald não se aplica (TG ≥ 400)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "非 HDL 胆固醇",
+                "locale": "zh",
+                "template": "documented-authored-36eca56b5d2616c85fd7"
+              },
+              "value": {
+                "text": "210 mg/dL",
+                "locale": "zh",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  210
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDL-c (Sampson/NIH)",
+                "locale": "zh",
+                "template": "documented-authored-bce33b617c20edcd0c8e"
+              },
+              "value": {
+                "text": "129 mg/dL",
+                "locale": "zh",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  129
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDL-c（Friedewald）",
+                "locale": "zh",
+                "template": "documented-authored-a1ca833b419b86f64f24"
+              },
+              "value": {
+                "text": "不适用 (TG ≥ 400)",
+                "locale": "zh",
+                "template": "documented-authored-b8407d5cbabc4fbccd42"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "与您的心血管风险目标比较",
+            "locale": "zh",
+            "template": "documented-authored-2654b72374ea20903147"
+          },
+          "note": {
+            "text": "甘油三酯 ≥ 400 mg/dL：不要使用 Friedewald。",
+            "locale": "zh",
+            "template": "documented-authored-1281a277f961192b8613"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "CT 200, HDL 50, TG 150: Friedewald 120 · Sampson ≈ 123 · não-HDL 150",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "non-HDLコレステロール",
+                "locale": "ja",
+                "template": "documented-authored-36eca56b5d2616c85fd7"
+              },
+              "value": {
+                "text": "150 mg/dL",
+                "locale": "ja",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  150
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDL-c (Sampson/NIH)",
+                "locale": "ja",
+                "template": "documented-authored-bce33b617c20edcd0c8e"
+              },
+              "value": {
+                "text": "123 mg/dL",
+                "locale": "ja",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  123
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDL-c（Friedewald）",
+                "locale": "ja",
+                "template": "documented-authored-a1ca833b419b86f64f24"
+              },
+              "value": {
+                "text": "120 mg/dL",
+                "locale": "ja",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  120
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "心血管リスクの目標値と比較してください",
+            "locale": "ja",
+            "template": "documented-authored-2654b72374ea20903147"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "CT 250, HDL 40, TG 450: Friedewald não se aplica (TG ≥ 400)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "non-HDLコレステロール",
+                "locale": "ja",
+                "template": "documented-authored-36eca56b5d2616c85fd7"
+              },
+              "value": {
+                "text": "210 mg/dL",
+                "locale": "ja",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  210
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDL-c (Sampson/NIH)",
+                "locale": "ja",
+                "template": "documented-authored-bce33b617c20edcd0c8e"
+              },
+              "value": {
+                "text": "129 mg/dL",
+                "locale": "ja",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  129
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDL-c（Friedewald）",
+                "locale": "ja",
+                "template": "documented-authored-a1ca833b419b86f64f24"
+              },
+              "value": {
+                "text": "適用なし (TG ≥ 400)",
+                "locale": "ja",
+                "template": "documented-authored-b8407d5cbabc4fbccd42"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "心血管リスクの目標値と比較してください",
+            "locale": "ja",
+            "template": "documented-authored-2654b72374ea20903147"
+          },
+          "note": {
+            "text": "トリグリセリド ≥ 400 mg/dL：Friedewald は使用しないでください。",
+            "locale": "ja",
+            "template": "documented-authored-1281a277f961192b8613"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "CT 200, HDL 50, TG 150: Friedewald 120 · Sampson ≈ 123 · não-HDL 150",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "गैर-HDL कोलेस्ट्रॉल",
+                "locale": "hi",
+                "template": "documented-authored-36eca56b5d2616c85fd7"
+              },
+              "value": {
+                "text": "150 mg/dL",
+                "locale": "hi",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  150
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDL-c (Sampson/NIH)",
+                "locale": "hi",
+                "template": "documented-authored-bce33b617c20edcd0c8e"
+              },
+              "value": {
+                "text": "123 mg/dL",
+                "locale": "hi",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  123
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDL-c (Friedewald)",
+                "locale": "hi",
+                "template": "documented-authored-a1ca833b419b86f64f24"
+              },
+              "value": {
+                "text": "120 mg/dL",
+                "locale": "hi",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  120
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "अपने हृदय-संवहनी जोखिम के लक्ष्य से तुलना करें",
+            "locale": "hi",
+            "template": "documented-authored-2654b72374ea20903147"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "CT 250, HDL 40, TG 450: Friedewald não se aplica (TG ≥ 400)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "गैर-HDL कोलेस्ट्रॉल",
+                "locale": "hi",
+                "template": "documented-authored-36eca56b5d2616c85fd7"
+              },
+              "value": {
+                "text": "210 mg/dL",
+                "locale": "hi",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  210
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "LDL-c (Sampson/NIH)",
+                "locale": "hi",
+                "template": "documented-authored-bce33b617c20edcd0c8e"
+              },
+              "value": {
+                "text": "129 mg/dL",
+                "locale": "hi",
+                "template": "documented-authored-0e5c6503d51fa1a7771c",
+                "sourceNumbers": [
+                  129
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "LDL-c (Friedewald)",
+                "locale": "hi",
+                "template": "documented-authored-a1ca833b419b86f64f24"
+              },
+              "value": {
+                "text": "लागू नहीं (TG ≥ 400)",
+                "locale": "hi",
+                "template": "documented-authored-b8407d5cbabc4fbccd42"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "अपने हृदय-संवहनी जोखिम के लक्ष्य से तुलना करें",
+            "locale": "hi",
+            "template": "documented-authored-2654b72374ea20903147"
+          },
+          "note": {
+            "text": "ट्राइग्लिसराइड्स ≥ 400 mg/dL: Friedewald का उपयोग न करें।",
+            "locale": "hi",
+            "template": "documented-authored-1281a277f961192b8613"
+          },
+          "level": "info"
+        }
+      }
+    ]
+  }
+}

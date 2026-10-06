@@ -79,3 +79,31 @@ tool.jsonには出典、版、確認範囲が記録されています。examples
 Apache-2.0はELUCENIAのコードにのみ適用されます。評価尺度等、出版物、翻訳、データの権利は、それぞれの権利者に帰属します。LICENSEとNOTICEを保持してください。
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## 記録された結果
+
+以下の情報は、合成例に対する手法の出力を保持したものです。独立した臨床的検証を示すものではありません。
+
+### 1
+
+心血管リスクの目標値と比較してください
+
+| 結果の詳細 | |
+| --- | --- |
+| non-HDLコレステロール | 150 mg/dL |
+| LDL-c (Sampson/NIH) | 123 mg/dL |
+| LDL-c（Friedewald） | 120 mg/dL |
+
+
+### 2
+
+心血管リスクの目標値と比較してください
+
+| 結果の詳細 | |
+| --- | --- |
+| non-HDLコレステロール | 210 mg/dL |
+| LDL-c (Sampson/NIH) | 129 mg/dL |
+| LDL-c（Friedewald） | 適用なし (TG ≥ 400) |
+
+トリグリセリド ≥ 400 mg/dL：Friedewald は使用しないでください。
+
